@@ -1,0 +1,21 @@
+wrk:
+  build: .
+
+  volumes:
+   - test/scripts:/scripts
+   - test/data:/data
+
+  links:
+   - application
+
+  hostname: wrk
+  domainname: wrk.local
+
+application:
+  image: czerasz/http-debugger
+
+  hostname: app
+  domainname: app.local
+
+  ports:
+   - "3000"
