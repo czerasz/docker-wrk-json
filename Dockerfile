@@ -32,8 +32,8 @@ RUN apt-get install -y curl \
                        liblua5.1-dev
 
 # Install Luarocks - a lua package manager
-RUN curl http://keplerproject.github.io/luarocks/releases/luarocks-2.2.2.tar.gz -O &&\
-    tar -xzvf luarocks-2.2.2.tar.gz &&\
+RUN curl http://luarocks.github.io/luarocks/releases/luarocks-2.4.2.tar.gz -O &&\
+    tar -xzvf luarocks-2.4.2.tar.gz &&\
     cd luarocks-2.2.2 &&\
     ./configure &&\
     make build &&\
