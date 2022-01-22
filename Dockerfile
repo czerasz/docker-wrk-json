@@ -13,7 +13,7 @@ RUN apt-get update -y
 # RUN apt-get install -y strace procps tree vim git curl wget gnuplot
 
 # Install required software
-RUN apt-get install -y git make build-essential libssl-dev
+RUN apt-get install -y git make build-essential libssl-dev zip
 
 # Install wrk - benchmarking software
 # Resource: https://github.com/wg/wrk/wiki/Installing-Wrk-on-Linux
